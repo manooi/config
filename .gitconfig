@@ -1,0 +1,19 @@
+[alias]
+	adog = log --all --decorate --oneline --graph
+	pulld = pull origin dev
+	pullq = pull origin qas
+	po = push origin
+	cd = checkout dev
+	cq = checkout qas
+	cnb = checkout -b
+	db = branch -d
+	Db = branch -D
+	fp = fetch --prune
+	mff = merge --ff-only
+	mnff = merge --ff-only
+	rename = branch -m
+	s = status
+	r = restore
+	c = checkout
+	cdpd = !git checkout dev && git pull origin dev
+	cqpq = !git checkout qas && git pull origin qas
