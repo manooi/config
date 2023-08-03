@@ -8,4 +8,4 @@ git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.o
 
 sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-completions)/' ~/.zshrc
 
-echo "bindkey '`' autosuggest-execute" >> ~/.zshrc
+echo "bindkey '\`' autosuggest-execute" >> ~/.zshrc
