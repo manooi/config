@@ -104,11 +104,14 @@ eval "$(starship init zsh)"
 bindkey '`' autosuggest-execute
 unset LESS
 #alias dotnet="/usr/local/share/dotnet/x64/dotnet"
+#alias dotnet="/usr/local/share/dotnet/dotnet"
 alias efadd="dotnet ef migrations add"
 alias efupdate="dotnet ef database update"
 alias pip="pip3"
 alias python="python3"
-alias cls="clear"
+alias cls="clear && printf '\e[3J'"
+alias learn="cd ~/Desktop/LEARN"
+alias csp='~/./cloud-sql-proxy --address 127.0.0.1 --port 5432 cbm-intl-doa-nonprd:asia-southeast1:cbmr-doa-approval-db'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -130,3 +133,15 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export GITLAB_HOME="$HOME/gitlab"
 
 eval $(thefuck --alias)
+
+# Flutter
+export PATH="$HOME/FlutterDev/flutter/bin:$PATH"
+
+# Go
+export PATH="$HOME/go/bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/manooi/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/manooi/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/manooi/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/manooi/google-cloud-sdk/completion.zsh.inc'; fi
