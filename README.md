@@ -20,11 +20,13 @@ curl -sS https://starship.rs/install.sh | sh
 
 // config file
 mkdir -p ~/.config && wget https://raw.githubusercontent.com/manooi/config/master/starship.toml -O ~/.config/starship.toml
+
+echo 'eval "$(starship init zsh)"' >> ~/.zshrc
 ```
 
 # nvm
 ```
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
 ```
 
 # Create swap file script
