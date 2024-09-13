@@ -8,38 +8,9 @@ SetCapsLockState, AlwaysOff
 +CapsLock::CapsLock
 
 
-CapsLock::Send, {Ctrl down}{Shift down}{Shift up}{Ctrl up}
+CapsLock::Send, {LWin down}{Space down}{LWin up}{Space up}
 return
 
-;^up::
-;Send, {Home down}{Home up}
-;return
-
-;^down::
-;Send, {End down}{End up}
-;return
-
-
-::decit::
-Send, docker exec -it
-return
-
-
-::dcfu::
-Send, docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d
-return
-
-::dcfd::
-Send, docker-compose -f docker-compose.yml -f docker-compose.dev.yml down
-return
-
-::dcps::
-Send, docker ps
-return
-
-;F1::
-;Send, {F2 down}{F2 up}
-;return
 
 F12::
 SetCapsLockState % !GetKeyState("CapsLock", "T") ; requires [v1.1.30+]
@@ -95,18 +66,3 @@ Else
 		}
 	}
 Return
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
