@@ -21,3 +21,5 @@
 	cdpd = !git checkout dev && git pull origin dev
 	cqpq = !git checkout qas && git pull origin qas
 	count = rev-list --count HEAD
+	trio = "!sh -c 'git cdpd && git nff - && git po @'"
+        reall = "!sh -c 'git restore . && git restore --staged .'"
