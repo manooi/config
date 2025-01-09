@@ -111,7 +111,6 @@ alias pip="pip3"
 alias python="python3"
 alias cls="clear && printf '\e[3J'"
 alias learn="cd ~/Desktop/LEARN"
-alias csp='~/./cloud-sql-proxy --address 127.0.0.1 --port 5432 cbm-intl-doa-nonprd:asia-southeast1:cbmr-doa-approval-db'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
