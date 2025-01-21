@@ -33,3 +33,8 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/manooi/config/master/create_swap.sh) -- 1024"
 ```
+
+# macOS repeat key stroke on hold
+```
+defaults write -g ApplePressAndHoldEnabled -bool false
+```
