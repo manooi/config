@@ -38,3 +38,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/manooi/config/master/creat
 ```
 defaults write -g ApplePressAndHoldEnabled -bool false
 ```
+
+# macos enable dragging with ctrl + cmd
+```
+defaults write -g NSWindowShouldDragOnGesture -bool true
+```
