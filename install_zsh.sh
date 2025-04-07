@@ -3,12 +3,12 @@
 # Step 1: Update repositories
 sudo apt update
 
-sudo apt install git
+sudo apt install git -y
 
-sudo apt install curl
+sudo apt install curl -y
 
 # Step 2: Install Zsh
-sudo apt install zsh
+sudo apt install zsh -y
 
 # Step 3: Set Zsh as default shell (optional)
 chsh -s /bin/zsh
